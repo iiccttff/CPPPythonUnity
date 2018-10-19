@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Highcharts</title>
+        <style type="text/css">
+#container {
+    min-width: 0 auto;
+    max-width: 0 auto;
+    height: 0 auto;
+    margin: 0 auto
+}
+        </style>
+    </head>
+    <body>
+        <div id="container" style="min-width: 600px; min-height: 400px"></div>
+        <script type="text/javascript" src="highcharts/code/highstock.js"></script>
+        <script type="text/javascript" src="highcharts/themes/dark-blue.js"></script>
+        <script type="text/javascript" src="qwebchannel.js"></script>
+        <script type="text/javascript">
+
+            function OnSize(h) {
+                var div=document.getElementById("container");
+                div.style.height=h+'px';
+            }
+
+            function OnData(jsonValue) {
+                var jsonData = JSON.parse(jsonValue);
+
+                var div=document.getElementById("container");
+                div.style.height=jsonData.height+'px';
+
+                Highcharts.setOptions({
+                    global: {
+                        useUTC: false
+                    }
+                });
+
+                Highcharts.chart('container', {
+                    credits:{
+                         enabled: false
+                    },
+
+                    title: {
+                        text: null
+                    },
+
+                    scrollbar: {
+                        enabled: false
+                    },
+
+                    xAxis: {
+                        type: 'datetime',
+                        labels: {
+                            enabled: false
+                        },
+                        //categories: jsonData.categories,
+                        //tickInterval: jsonData.tickInterval,
+                        //max: jsonData.xAxisMax,
+
+                        //dateTimeLabelFormats : {
+                        //    week : '%Y/%m/%d %H%M'
+                        //}
+
+                    },
+
+                    yAxis: {
+                        title: {
+                            text: null
+                        },
+                        plotLines: [{ value: 0, width: 1, color: '#808080'}],
+                        step:20
+                    },
+
+                    tooltip: {
+                        //pointFormat: '{point.x:%e. %b}: {point.y:.2f} m'
+                        //headerFormat: '<b>{series.name}</b><br>',
+                        dateTimeLabelFormats: []
+                    },
+
+
+                    legend: {
+                        layout: 'vertical',
+                        align: 'right',
+                        verticalAlign: 'middle',
+                        borderWidth: 2
+                    },
+
+                    series: jsonData.series,
+                    
+                    responsive: {
+                        rules: [{
+                            condition: {
+                                maxWidth: 500
+                            },
+                            chartOptions: {
+                                legend: {
+                                    layout: 'horizontal',
+                                    align: 'center',
+                                    verticalAlign: 'bottom'
+                                }
+                            }
+                        }]
+                    }
+                });
+            }
+
+            window.onresize = function() {
+                window.pyjs.GetDivSize(OnSize);
+            }
+
+            window.onload = function () {
+    
+                new QWebChannel(qt.webChannelTransport, function (channel) {
+                    
+                    window.pyjs = channel.objects.pyjs;
+                    pyjs.GetData(OnData);
+                });
+            }
+        </script>
+    </body>
+</html>

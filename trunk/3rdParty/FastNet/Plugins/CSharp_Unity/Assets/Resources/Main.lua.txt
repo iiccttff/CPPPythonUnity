@@ -1,0 +1,44 @@
+
+
+function OnMessage(message)
+	print(message)
+end
+
+function OnRoomMessage(message)
+	print(message)
+end
+
+function OnEvent(evt,info)
+	print(evt,info)
+
+	if CS.FastNet.Event.kConnectSucceed == evt then
+		--m = pkt.common.AnyReq:Create()
+	    --m.classId = pkt.common.MessageType.LoginReq_AG
+	    --self.m_client:SendMessage(m)
+
+		--self.m_client:AccountVerify('000','{}')
+	end
+end
+
+function awake()
+	print("lua awake")
+end
+
+function start()
+	print("lua start")
+	self.m_client.OnLuaEvent = OnEvent
+    self.m_client.OnLuaMessage = OnMessage
+	self.m_client.OnLuaRoomMessage = OnRoomMessage
+    self.m_client:Connect('10.10.80.136',15001,20)
+end
+
+function update()
+	-- print("lua update")
+end
+
+function ondestroy()
+	self.m_client:Close()
+    self.m_client.OnLuaEvent = nil
+    self.m_client.OnLuaMessage = nil
+    print("lua destroy")
+end

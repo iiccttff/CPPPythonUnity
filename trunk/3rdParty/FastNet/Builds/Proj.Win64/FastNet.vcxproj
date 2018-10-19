@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Include\FastNet\core\App.cpp" />
+    <ClCompile Include="..\..\Include\FastNet\core\Callback.cpp" />
+    <ClCompile Include="..\..\Include\FastNet\core\ClassFactory.cpp" />
+    <ClCompile Include="..\..\Include\FastNet\core\Client.cpp" />
+    <ClCompile Include="..\..\Include\FastNet\core\Helper.cpp" />
+    <ClCompile Include="..\..\Include\FastNet\core\Log.cpp" />
+    <ClCompile Include="..\..\Include\FastNet\core\Message.cpp" />
+    <ClCompile Include="..\..\Include\FastNet\core\Object.cpp" />
+    <ClCompile Include="..\..\Include\FastNet\core\Server.cpp" />
+    <ClCompile Include="..\..\Include\FastNet\core\Session.cpp" />
+    <ClCompile Include="..\..\Include\FastNet\core\Socket.cpp" />
+    <ClCompile Include="..\..\Include\FastNet\core\Stream.cpp" />
+    <ClCompile Include="..\..\Include\FastNet\FastNet.cpp" />
+    <ClCompile Include="..\..\Include\FastNet\global\Global.cpp" />
+    <ClCompile Include="..\..\Include\FastNet\global\GlobalManager.cpp" />
+    <ClCompile Include="..\..\Include\FastNet\pkt\protocols.cpp" />
+    <ClCompile Include="..\..\Include\FastNet\role\Role.cpp" />
+    <ClCompile Include="..\..\Include\FastNet\role\RoleManager.cpp" />
+    <ClCompile Include="..\..\Include\FastNet\role\RoleModule.cpp" />
+    <ClCompile Include="..\..\Include\FastNet\room\Room.cpp" />
+    <ClCompile Include="..\..\Include\FastNet\room\RoomManager.cpp" />
+    <ClCompile Include="..\..\Include\FastNet\store\Store.cpp" />
+    <ClCompile Include="..\..\Include\FastNet\store\StoreManager.cpp" />
+    <ClCompile Include="..\..\Include\FastNet\timer\Timer.cpp" />
+    <ClCompile Include="..\..\Include\FastNet\timer\TimerManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Include\FastNet\core\App.h" />
+    <ClInclude Include="..\..\Include\FastNet\core\Callback.h" />
+    <ClInclude Include="..\..\Include\FastNet\core\Cfg.h" />
+    <ClInclude Include="..\..\Include\FastNet\core\ClassFactory.h" />
+    <ClInclude Include="..\..\Include\FastNet\core\Client.h" />
+    <ClInclude Include="..\..\Include\FastNet\core\Defs.h" />
+    <ClInclude Include="..\..\Include\FastNet\core\Helper.h" />
+    <ClInclude Include="..\..\Include\FastNet\core\Log.h" />
+    <ClInclude Include="..\..\Include\FastNet\core\Message.h" />
+    <ClInclude Include="..\..\Include\FastNet\core\Object.h" />
+    <ClInclude Include="..\..\Include\FastNet\core\Server.h" />
+    <ClInclude Include="..\..\Include\FastNet\core\Session.h" />
+    <ClInclude Include="..\..\Include\FastNet\core\Singleton.h" />
+    <ClInclude Include="..\..\Include\FastNet\core\Socket.h" />
+    <ClInclude Include="..\..\Include\FastNet\core\Stream.h" />
+    <ClInclude Include="..\..\Include\FastNet\core\Types.h" />
+    <ClInclude Include="..\..\Include\FastNet\FastNet.h" />
+    <ClInclude Include="..\..\Include\FastNet\global\Global.h" />
+    <ClInclude Include="..\..\Include\FastNet\global\GlobalManager.h" />
+    <ClInclude Include="..\..\Include\FastNet\pkt\protocols.h" />
+    <ClInclude Include="..\..\Include\FastNet\role\Role.h" />
+    <ClInclude Include="..\..\Include\FastNet\role\RoleManager.h" />
+    <ClInclude Include="..\..\Include\FastNet\role\RoleModule.h" />
+    <ClInclude Include="..\..\Include\FastNet\room\Room.h" />
+    <ClInclude Include="..\..\Include\FastNet\room\RoomManager.h" />
+    <ClInclude Include="..\..\Include\FastNet\store\Store.h" />
+    <ClInclude Include="..\..\Include\FastNet\store\StoreManager.h" />
+    <ClInclude Include="..\..\Include\FastNet\timer\Timer.h" />
+    <ClInclude Include="..\..\Include\FastNet\timer\TimerManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Scripts\ChildProcess.py" />
+    <None Include="..\..\Scripts\Helper.py" />
+    <None Include="..\..\Scripts\HttpServer.py" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{08E1B4DD-0CA8-4B65-9123-5AD61F05B820}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>FastNet</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="FastNet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="FastNet.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)..\..\Bin\Win64\$(Configuration)\</OutDir>
+    <TargetName>$(ProjectName)</TargetName>
+    <TargetExt>.pyd</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)..\..\Bin\Win64\$(Configuration)\</OutDir>
+    <TargetExt>.pyd</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;DEBUG;_WINDOWS;_USRDLL;FASTNET_EXPORTS;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\boost_1_67_0;$(ProjectDir)..\..\..\poco-1.7.9-all/Foundation/include;$(ProjectDir)..\..\..\poco-1.7.9-all/Data/include;$(ProjectDir)..\..\..\poco-1.7.9-all/Data/SQLite/include;$(ProjectDir)..\..\..\poco-1.7.9-all/Data/MySQL/include;$(ProjectDir)..\..\..\poco-1.7.9-all/Net/include;$(ProjectDir)..\..\..\poco-1.7.9-all/Net_OpenSSL/include;$(ProjectDir)..\..\..\poco-1.7.9-all/Crypto/include;$(ProjectDir)..\..\..\poco-1.7.9-all/XML/include;$(ProjectDir)..\..\..\poco-1.7.9-all/JSON/include;$(ProjectDir)..\..\..\poco-1.7.9-all/Util/include;$(ProjectDir)..\..\..\poco-1.7.9-all/Zip/include;$(ProjectDir)..\..\Include;$(ProjectDir)..\..\..\openssl-1.0.2o/include;$(ProjectDir)..\..\..\mongo-cxx-driver-r3.2.0/include;$(ProjectDir)..\..\..\mongo-c-driver-1.9.5/include;$(ProjectDir)..\..\..\libbson-1.9.5/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4503;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\..\boost_1_67_0/OutLibs/Win64;$(ProjectDir)..\..\..\poco-1.7.9-all/OutLibs/Win64;$(PythonRootDir)libs;$(ProjectDir)..\..\Bin\Win64\$(Configuration);$(ProjectDir)..\..\..\openssl-1.0.2o/lib;$(ProjectDir)..\..\..\leveldb/OutLibs/Win64;$(ProjectDir)..\..\..\mongo-cxx-driver-r3.2.0/OutLibs/Win64;$(ProjectDir)..\..\..\libbson-1.9.5/OutLibs/Win64;$(ProjectDir)..\..\..\mongo-c-driver-1.9.5/OutLibs/Win64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libeay32.lib;ssleay32.lib;mongoc-1.0.lib;bson-1.0.lib;mongocxx.lib;bsoncxx.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;FASTNET_EXPORTS;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\boost_1_67_0;$(ProjectDir)..\..\..\poco-1.7.9-all/Foundation/include;$(ProjectDir)..\..\..\poco-1.7.9-all/Data/include;$(ProjectDir)..\..\..\poco-1.7.9-all/Data/SQLite/include;$(ProjectDir)..\..\..\poco-1.7.9-all/Data/MySQL/include;$(ProjectDir)..\..\..\poco-1.7.9-all/Net/include;$(ProjectDir)..\..\..\poco-1.7.9-all/Net_OpenSSL/include;$(ProjectDir)..\..\..\poco-1.7.9-all/Crypto/include;$(ProjectDir)..\..\..\poco-1.7.9-all/XML/include;$(ProjectDir)..\..\..\poco-1.7.9-all/JSON/include;$(ProjectDir)..\..\..\poco-1.7.9-all/Util/include;$(ProjectDir)..\..\..\poco-1.7.9-all/Zip/include;$(ProjectDir)..\..\Include;$(ProjectDir)..\..\..\openssl-1.0.2o/include;$(ProjectDir)..\..\..\mongo-cxx-driver-r3.2.0/include;$(ProjectDir)..\..\..\mongo-c-driver-1.9.5/include;$(ProjectDir)..\..\..\libbson-1.9.5/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4503;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\..\boost_1_67_0/OutLibs/Win64;$(ProjectDir)..\..\..\poco-1.7.9-all/OutLibs/Win64;$(PythonRootDir)libs;$(ProjectDir)..\..\Bin\Win64\$(Configuration);$(ProjectDir)..\..\..\openssl-1.0.2o/lib;$(ProjectDir)..\..\..\leveldb/OutLibs/Win64;$(ProjectDir)..\..\..\mongo-cxx-driver-r3.2.0/OutLibs/Win64;$(ProjectDir)..\..\..\libbson-1.9.5/OutLibs/Win64;$(ProjectDir)..\..\..\mongo-c-driver-1.9.5/OutLibs/Win64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libeay32.lib;ssleay32.lib;mongoc-1.0.lib;bson-1.0.lib;mongocxx.lib;bsoncxx.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

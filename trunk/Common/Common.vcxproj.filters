@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Src">
+      <UniqueIdentifier>{6db15694-3912-449f-aace-50ff2038e675}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\pkt">
+      <UniqueIdentifier>{cdc42daf-d610-4140-ae5e-660b44ba8b86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\cfg">
+      <UniqueIdentifier>{673dcd21-de4a-4770-89d4-79eb4006bb86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\cfg\globals">
+      <UniqueIdentifier>{e3a0a2d3-4d52-482f-a54d-278b927fb717}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pkt\common.cpp">
+      <Filter>Src\pkt</Filter>
+    </ClCompile>
+    <ClCompile Include="cfg\globals\base.cpp">
+      <Filter>Src\cfg\globals</Filter>
+    </ClCompile>
+    <ClCompile Include="cfg\globals\modules.cpp">
+      <Filter>Src\cfg\globals</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pkt\common.h">
+      <Filter>Src\pkt</Filter>
+    </ClInclude>
+    <ClInclude Include="cfg\globals\base.h">
+      <Filter>Src\cfg\globals</Filter>
+    </ClInclude>
+    <ClInclude Include="cfg\globals\modules.h">
+      <Filter>Src\cfg\globals</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

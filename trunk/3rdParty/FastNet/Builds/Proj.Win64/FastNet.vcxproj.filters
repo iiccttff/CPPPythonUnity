@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Include">
+      <UniqueIdentifier>{adcc062d-00ba-41b6-9eaa-141a3e0b65c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\FastNet">
+      <UniqueIdentifier>{5197edee-9512-401e-be52-82905a77d8c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\FastNet\pkt">
+      <UniqueIdentifier>{c09eb681-6e26-40a0-a817-4e84c9b3d42c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\FastNet\role">
+      <UniqueIdentifier>{64e530f2-5b69-4eef-9315-d4515c60c8a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\FastNet\global">
+      <UniqueIdentifier>{b0511b18-0ff3-4b19-b37e-f937ebf949f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\FastNet\timer">
+      <UniqueIdentifier>{0fe551f1-a694-4062-aa8a-742d0db30d02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\FastNet\core">
+      <UniqueIdentifier>{d781b35d-36fe-4785-9c5f-04ea2a69e25d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\FastNet\store">
+      <UniqueIdentifier>{4363714f-6032-494f-8d40-f36f38a68b49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\FastNet\room">
+      <UniqueIdentifier>{682cea24-76d9-4944-a916-5d2d897fc68f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripts">
+      <UniqueIdentifier>{bca85628-9a83-4cac-8710-870b1811e6ce}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Include\FastNet\role\Role.cpp">
+      <Filter>Include\FastNet\role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\FastNet\role\RoleManager.cpp">
+      <Filter>Include\FastNet\role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\FastNet\global\Global.cpp">
+      <Filter>Include\FastNet\global</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\FastNet\global\GlobalManager.cpp">
+      <Filter>Include\FastNet\global</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\FastNet\timer\Timer.cpp">
+      <Filter>Include\FastNet\timer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\FastNet\timer\TimerManager.cpp">
+      <Filter>Include\FastNet\timer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\FastNet\core\App.cpp">
+      <Filter>Include\FastNet\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\FastNet\core\Callback.cpp">
+      <Filter>Include\FastNet\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\FastNet\core\ClassFactory.cpp">
+      <Filter>Include\FastNet\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\FastNet\core\Client.cpp">
+      <Filter>Include\FastNet\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\FastNet\core\Log.cpp">
+      <Filter>Include\FastNet\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\FastNet\core\Message.cpp">
+      <Filter>Include\FastNet\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\FastNet\core\Object.cpp">
+      <Filter>Include\FastNet\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\FastNet\core\Server.cpp">
+      <Filter>Include\FastNet\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\FastNet\core\Session.cpp">
+      <Filter>Include\FastNet\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\FastNet\core\Socket.cpp">
+      <Filter>Include\FastNet\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\FastNet\core\Stream.cpp">
+      <Filter>Include\FastNet\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\FastNet\FastNet.cpp">
+      <Filter>Include\FastNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\FastNet\store\Store.cpp">
+      <Filter>Include\FastNet\store</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\FastNet\room\Room.cpp">
+      <Filter>Include\FastNet\room</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\FastNet\room\RoomManager.cpp">
+      <Filter>Include\FastNet\room</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\FastNet\store\StoreManager.cpp">
+      <Filter>Include\FastNet\store</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\FastNet\role\RoleModule.cpp">
+      <Filter>Include\FastNet\role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\FastNet\core\Helper.cpp">
+      <Filter>Include\FastNet\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\FastNet\pkt\protocols.cpp">
+      <Filter>Include\FastNet\pkt</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Include\FastNet\FastNet.h">
+      <Filter>Include\FastNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\FastNet\pkt\protocols.h">
+      <Filter>Include\FastNet\pkt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\FastNet\role\Role.h">
+      <Filter>Include\FastNet\role</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\FastNet\role\RoleManager.h">
+      <Filter>Include\FastNet\role</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\FastNet\global\Global.h">
+      <Filter>Include\FastNet\global</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\FastNet\global\GlobalManager.h">
+      <Filter>Include\FastNet\global</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\FastNet\timer\Timer.h">
+      <Filter>Include\FastNet\timer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\FastNet\timer\TimerManager.h">
+      <Filter>Include\FastNet\timer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\FastNet\core\App.h">
+      <Filter>Include\FastNet\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\FastNet\core\Callback.h">
+      <Filter>Include\FastNet\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\FastNet\core\Cfg.h">
+      <Filter>Include\FastNet\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\FastNet\core\ClassFactory.h">
+      <Filter>Include\FastNet\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\FastNet\core\Client.h">
+      <Filter>Include\FastNet\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\FastNet\core\Defs.h">
+      <Filter>Include\FastNet\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\FastNet\core\Log.h">
+      <Filter>Include\FastNet\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\FastNet\core\Message.h">
+      <Filter>Include\FastNet\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\FastNet\core\Object.h">
+      <Filter>Include\FastNet\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\FastNet\core\Server.h">
+      <Filter>Include\FastNet\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\FastNet\core\Session.h">
+      <Filter>Include\FastNet\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\FastNet\core\Socket.h">
+      <Filter>Include\FastNet\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\FastNet\core\Types.h">
+      <Filter>Include\FastNet\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\FastNet\store\Store.h">
+      <Filter>Include\FastNet\store</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\FastNet\room\Room.h">
+      <Filter>Include\FastNet\room</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\FastNet\room\RoomManager.h">
+      <Filter>Include\FastNet\room</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\FastNet\store\StoreManager.h">
+      <Filter>Include\FastNet\store</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\FastNet\core\Stream.h">
+      <Filter>Include\FastNet\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\FastNet\role\RoleModule.h">
+      <Filter>Include\FastNet\role</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\FastNet\core\Helper.h">
+      <Filter>Include\FastNet\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\FastNet\core\Singleton.h">
+      <Filter>Include\FastNet\core</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Scripts\HttpServer.py">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="..\..\Scripts\ChildProcess.py">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="..\..\Scripts\Helper.py">
+      <Filter>Scripts</Filter>
+    </None>
+  </ItemGroup>
+</Project>

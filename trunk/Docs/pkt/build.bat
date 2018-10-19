@@ -1,0 +1,1 @@
+python -B ../../3rdParty/FastNet/Tools/TableEdit/App.py --cmdmode --cpp_out=../../Common --csharp_out=../../Common --lua_out=../../Bin/Win64/Debug/Common --root=./

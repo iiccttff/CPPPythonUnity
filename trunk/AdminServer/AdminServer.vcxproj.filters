@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Scripts">
+      <UniqueIdentifier>{94a18373-b029-4c36-877d-6af4218314e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src">
+      <UniqueIdentifier>{28f7d475-9270-4899-8df9-f833c4516691}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripts\globals">
+      <UniqueIdentifier>{8656c8ed-cda6-4fe1-a9c3-78f8617de27a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripts\modules">
+      <UniqueIdentifier>{11dce98c-1ef1-4fb9-ab8b-15787448ad2a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\main.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\App.py">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\Role.py">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\globals\DataQuery.py">
+      <Filter>Scripts\globals</Filter>
+    </None>
+    <None Include="Scripts\globals\PlatformMgr.py">
+      <Filter>Scripts\globals</Filter>
+    </None>
+    <None Include="Scripts\globals\ServerMgr.py">
+      <Filter>Scripts\globals</Filter>
+    </None>
+    <None Include="Scripts\modules\Email.py">
+      <Filter>Scripts\modules</Filter>
+    </None>
+    <None Include="Scripts\Session.py">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\globals\Global.py">
+      <Filter>Scripts\globals</Filter>
+    </None>
+    <None Include="Scripts\globals\NoticeMgr.py">
+      <Filter>Scripts\globals</Filter>
+    </None>
+    <None Include="Scripts\globals\MailMgr.py">
+      <Filter>Scripts\globals</Filter>
+    </None>
+    <None Include="Scripts\globals\UserMgr.py">
+      <Filter>Scripts\globals</Filter>
+    </None>
+  </ItemGroup>
+</Project>

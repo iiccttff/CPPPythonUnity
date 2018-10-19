@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Scripts">
+      <UniqueIdentifier>{9332897d-2c47-42ed-9731-2ebeeedbdb6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripts\dlgs">
+      <UniqueIdentifier>{d027ed96-1d19-44a2-a981-b508f226ae8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripts\tabs">
+      <UniqueIdentifier>{da263898-68d6-4d64-985e-95d4b6cea26c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src">
+      <UniqueIdentifier>{b16d4695-6d24-4e02-ad60-a12fcfd6eead}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripts\log">
+      <UniqueIdentifier>{a9785519-fb28-4483-8b6a-9d8d07b43cdb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\App.py">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\Client.py">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\LoginDialog.py">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\MainWindow.py">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\Signals.py">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\dlgs\__init__.py">
+      <Filter>Scripts\dlgs</Filter>
+    </None>
+    <None Include="Scripts\dlgs\AddPlatform.py">
+      <Filter>Scripts\dlgs</Filter>
+    </None>
+    <None Include="Scripts\dlgs\EditCodeDialog.py">
+      <Filter>Scripts\dlgs</Filter>
+    </None>
+    <None Include="Scripts\tabs\__init__.py">
+      <Filter>Scripts\tabs</Filter>
+    </None>
+    <None Include="Scripts\tabs\DataQuery.py">
+      <Filter>Scripts\tabs</Filter>
+    </None>
+    <None Include="Scripts\tabs\PlatformMgr.py">
+      <Filter>Scripts\tabs</Filter>
+    </None>
+    <None Include="Scripts\tabs\PythonHighlighter.py">
+      <Filter>Scripts\tabs</Filter>
+    </None>
+    <None Include="Scripts\tabs\ServerMgr.py">
+      <Filter>Scripts\tabs</Filter>
+    </None>
+    <None Include="Scripts\tabs\TableViewModel.py">
+      <Filter>Scripts\tabs</Filter>
+    </None>
+    <None Include="Scripts\tabs\UserMgr.py">
+      <Filter>Scripts\tabs</Filter>
+    </None>
+    <None Include="Scripts\dlgs\SVNMgrDialog.py">
+      <Filter>Scripts\dlgs</Filter>
+    </None>
+    <None Include="Scripts\dlgs\DaemonMgrDialog.py">
+      <Filter>Scripts\dlgs</Filter>
+    </None>
+    <None Include="Scripts\dlgs\AddServer.py">
+      <Filter>Scripts\dlgs</Filter>
+    </None>
+    <None Include="Scripts\log\LoginLogout.py">
+      <Filter>Scripts\log</Filter>
+    </None>
+    <None Include="Scripts\log\WebEngineView.py">
+      <Filter>Scripts\log</Filter>
+    </None>
+    <None Include="Scripts\log\ServerLog.py">
+      <Filter>Scripts\log</Filter>
+    </None>
+    <None Include="Scripts\dlgs\RepairWhitelistDialog.py">
+      <Filter>Scripts\dlgs</Filter>
+    </None>
+    <None Include="Scripts\dlgs\NewEnterNoticeMail.py">
+      <Filter>Scripts\dlgs</Filter>
+    </None>
+    <None Include="Scripts\dlgs\AddTimerTask.py">
+      <Filter>Scripts\dlgs</Filter>
+    </None>
+    <None Include="Scripts\log\SystemResource.py">
+      <Filter>Scripts\log</Filter>
+    </None>
+    <None Include="Scripts\tabs\MailMgr.py">
+      <Filter>Scripts\tabs</Filter>
+    </None>
+    <None Include="Scripts\tabs\NoticeMgr.py">
+      <Filter>Scripts\tabs</Filter>
+    </None>
+    <None Include="Scripts\dlgs\AddMail.py">
+      <Filter>Scripts\dlgs</Filter>
+    </None>
+    <None Include="Scripts\dlgs\AddNotice.py">
+      <Filter>Scripts\dlgs</Filter>
+    </None>
+    <None Include="Scripts\dlgs\AddUser.py">
+      <Filter>Scripts\dlgs</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\main.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

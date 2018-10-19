@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PlatformMgr</class>
+ <widget class="QWidget" name="PlatformMgr">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1013</width>
+    <height>739</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>平台管理</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="0,1,0,1,0,1">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="3">
+     <item>
+      <widget class="QLabel" name="label_13">
+       <property name="text">
+        <string>平台列表</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="3,1">
+     <item>
+      <widget class="QTableView" name="tableViewPlatform"/>
+     </item>
+     <item>
+      <widget class="QTableView" name="tableViewPlatform2"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="3">
+     <item>
+      <widget class="QLabel" name="labelChannel">
+       <property name="text">
+        <string>渠道列表</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="3,1">
+     <item>
+      <widget class="QTableView" name="tableViewChannel"/>
+     </item>
+     <item>
+      <widget class="QTableView" name="tableViewChannel2"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="3">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>服务器分组</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="3,1">
+     <item>
+      <widget class="QTableView" name="tableViewServerGroup"/>
+     </item>
+     <item>
+      <widget class="QTableView" name="tableViewServerGroup2"/>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

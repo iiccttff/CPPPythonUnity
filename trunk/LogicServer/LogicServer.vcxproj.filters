@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Src">
+      <UniqueIdentifier>{be983c6c-3b0c-4c4a-9ea6-33bb56531245}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripts">
+      <UniqueIdentifier>{a582da29-9625-4865-ae11-7ddd10c526aa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\main.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\App.py">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\Session.py">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\QATest.py">
+      <Filter>Scripts</Filter>
+    </None>
+  </ItemGroup>
+</Project>
